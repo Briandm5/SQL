@@ -1,6 +1,9 @@
---Create a grocery store database
+# In this SQL code, I created my own grocery store and querying a data to answer questions regarding pricing.
+
+#Create a table for your store.
 CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, popularity INTEGER);
 
+#Insert values for your store.
 INSERT INTO store VALUES (1, "melon", "produce", 2.99, 50);
 INSERT INTO store VALUES (2, "strawberry", "produce", 0.99, 95);
 INSERT INTO store VALUES (3, "qtips", "hygiene", 2.99, 55);
@@ -17,7 +20,11 @@ INSERT INTO store VALUES (13, "vitamin C", "health", 8.99,29);
 INSERT INTO store VALUES (14, "nutritional yeast", "health", 2.99, 26);
 INSERT INTO store VALUES (15, "cheetos", "snacks", 1.99, 47); 
 
-
---display the database ordered by price.
+#Show the table you created for your store.
 SELECT * FROM store
-ORDER BY price desc;
+
+#Order all the products offered in your store from highest to lowest price.
+SELECT * FROM store
+    ORDER BY price DESC
+    ;
+
