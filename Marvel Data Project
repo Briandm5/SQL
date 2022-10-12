@@ -66,4 +66,9 @@ SELECT COUNT(*),
     GROUP BY weight_category
     ;
     
- 
+ #Show the male Marvel characters whose intelligence and durability is higher than 5. Include their name, popularity, and fighting skills.   
+ SELECT name, popularity, fighting_skills FROM marvels
+    WHERE gender = "Male"
+    AND intelligence > 5
+    AND durability > 5 
+    ;
